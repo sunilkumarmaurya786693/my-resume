@@ -1,0 +1,515 @@
+
+body,ul
+{
+    margin:0px;
+    padding:0px;
+
+}
+header#body-header
+{
+    height: 65vh;
+    background-image: url("images/backround-image.jpg");
+    background-position:center;
+    background-attachment: fixed;
+     background-color: aqua;
+     background-size: cover;
+    opacity: 0.8; 
+}
+ul.navbar li
+{
+     color:white; 
+    font-size: 1.5em;
+    display: inline-block;
+    margin: 0px 10px 10px 0px; 
+    margin-top: 30px;
+    align-self:center;
+    list-style: none;
+     padding-left: 10px; 
+}
+ul.navbar li a{
+    color: white;
+    font-weight: 500;
+    font-size: 1em;
+}
+ul.navbar li a:hover
+{
+    color:grey;
+    border-bottom: 1px solid white;
+    transition: color 1s,border-bottom 4s;
+}
+.center
+{
+text-align: center;
+}
+a{
+    text-decoration: none;
+}
+header .name
+{
+    color: white;
+    margin-top: 50px;
+    font-size: 4em;
+    font-weight: 800;
+    font-family: verdana;
+}
+#size:hover
+{
+color: lightskyblue;
+transition: color 1s;
+}
+ul.icon li a
+{
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+}
+ul.icon li
+{
+    
+    display: inline-block;
+    margin: 0px 10px 10px 0px; 
+    margin-top: 15px;
+    align-self:center;
+    list-style: none;
+     padding-left: 10px; 
+}
+ul.icon li a:hover
+{
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 10px wheat;
+    transition: box-shadow .5s;
+}
+#photo
+{
+    height: 45vh;
+    position: relative;
+    left: 40vw;
+    top:-100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 2px lightcyan;
+    
+}
+#detail
+{
+    width: 80vw;
+    font-size: 1.2em;
+    font-family: cursive;
+    text-align: justify;
+    word-spacing: 10px;
+    color: #52042fb9;
+    
+    margin:auto;
+}
+#skill i,#skill span,#port span,#port i,#experience #hero,#education #hero
+{
+    font-size: 3em;
+    color:#062c85;
+    margin-top:50px;
+    /* font-family: Arial; */
+}
+#skill
+{
+    margin-top: 30px;
+    height: auto;
+    
+    /* color:#062c85; */
+}
+section:nth-child(2n)
+{
+    /* background-color:#efefef; */
+    background:linear-gradient(to left,rgba(236, 163, 197, 0.178),rgba(173, 240, 146, 0.253));
+}
+section:nth-child(2n+1)
+{
+    background-color:white;
+}
+.container
+{
+    display:flex;
+    flex-wrap:wrap;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    width: 80vw;
+    margin: auto;
+
+}
+.skills
+{
+    color:white;
+    background-color:#d3d3d3;
+    /* flex:1; */
+    border-radius: 40px;
+    width: 20vw;
+    height: 5vh;
+    margin: 20px;
+    text-align: center;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    line-height: 31px;
+}
+.progress
+{
+    width: 80%;
+    
+    height: inherit;
+    border-radius: 40px 0 0 40px;
+    word-wrap: break-word;
+ box-shadow: 3px 0px 3px 0px grey;
+}
+.skills:nth-child(4n)>.progress
+{
+    background-color: aqua;
+}
+.skills:nth-child(4n+1)>.progress
+{
+    background-color: lightsalmon;
+}
+.skills:nth-child(4n+2)>.progress
+{
+    background-color: lime;
+}
+.skills:nth-child(4n+3)>.progress
+{
+    background-color: olive;
+}
+.containerf
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    width: 90vw;
+    /* margin: auto; */
+    /* align-items: center; */
+    
+}
+.project
+{
+   
+    margin: 20px;
+    background-color: bisque;
+    height: auto;
+    box-shadow: 0px 0px 10px 0px grey;
+    box-shadow: 5px 5px 4px #aaaaaa;
+    border-radius: 10px;
+    font-family: cursive;
+    color:royalblue;
+    font-size: 1.3em;
+    transition: 1s;
+    
+}
+.project>img
+{
+    width: 25vw;
+    height: 30vh;
+}
+#contact>center
+{
+    color:white;
+}
+#contact
+{
+    background: linear-gradient(to right,#154adb,#403066);
+    color:white;
+}
+#contactc
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    width: 90vw;
+    margin: auto;
+    margin-top:20px;
+    /* align-items: center; */
+}
+#form
+{
+/* background-color: aliceblue; */
+height: auto;
+width: 40vw;
+
+}
+#details
+{
+/* background-color: antiquewhite; */
+height: 40vh;
+width: 40vw;
+font-family: Arial;
+}
+#contactc input,textarea
+{
+    width: 100%;
+    height: 30px;
+    background-color: inherit;
+    border: 0px solid white;
+    border-bottom: 3px solid white;
+font-size: 1.3em;
+text-transform: capitalize;
+    margin: 20px;
+}
+#submit
+{
+    background-color: inherit;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 50px;
+    width: 180px;
+    font-size: 1.5em;
+}
+.exper
+{
+    height: auto;
+    width: 70vw;
+    margin: auto;
+    /* border: 2px solid black; */
+    position: relative;
+}
+.fcontain
+{
+    display:flex;
+    justify-content: space-around;
+
+
+}
+.images
+{
+    background-image: url(images/ninjasicon.png);
+    background-size: contain;
+    height: 100px;
+    width: 200px;
+    background-repeat: no-repeat;
+}
+
+#exp
+{
+    position: relative;
+
+height: auto;
+/* border: 2px solid black; */
+width: 40%;
+margin: 10px;
+}
+#exp h1
+{
+    font-size: 2rem;
+    text-align: right;
+    color: #062c85;
+
+
+}
+
+#exp h2
+{
+    font-size: 1rem;
+    text-align: right;
+    color: #154adb;
+}
+#exp h3
+{
+    font-size: 1rem;
+    text-align: right;
+    color: #403066;
+}
+#exp:nth-child(2n)
+{
+    left: 1%;
+}
+#exp:nth-child(2n+1)
+{
+    left:54%;
+}
+#line
+{position: absolute;
+    height: 75%;
+    width: 0px;
+    border: 3px dashed darkgoldenrod;
+    
+    
+    top: 7%;
+    left: 50%;
+}
+#line>#plane
+{
+   
+    position: sticky;
+   
+    top: 20px;
+    font-size: 2em;
+    transform: rotate(90deg);
+    color: darkblue;
+    
+    
+
+}
+#line>#car
+{
+   
+    position: sticky;
+   
+    top: 20px;
+    font-size: 2em;
+    /* transform: rotate(90deg); */
+    color: darkblue;
+    
+    
+
+}
+#exp::after{
+    position: absolute;
+    top: 30%;
+    
+    content: '';
+    
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+}
+#exp:nth-child(2n)::after
+{
+    left: 118.4%;
+}
+#exp:nth-child(2n+1)::after
+{
+    left: -14%;
+}
+@media screen and (max-width:900px)
+{
+   
+    
+    
+    
+    #photo {
+        height: 25vh;
+        position: relative;
+        left: 35vw;
+        top: -50px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 2px lightcyan;
+    }
+    header .name {
+        color: white;
+        margin-top: 50px;
+        font-size: 3em;
+        font-weight: 800;
+        font-family: verdana;
+    }
+
+}
+@media screen and (max-width:600px)
+{
+    #line
+    {
+        left: -4%;
+    }
+    #exp
+    {
+        left:10% !important;
+        width: 80%;
+    }
+    #exp::after
+    {
+        left: -22.5% !important;
+    }
+    .project
+    {
+        width: 90%;
+    }
+    #contactc
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container
+    {
+        flex-direction: column;
+        align-items: center;
+     
+    }
+    .progress
+    {
+        flex: 1;
+    }
+    #photo {
+        height: 20vh;
+        position: relative;
+        left: 35vw;
+        top: -30px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 2px lightcyan;
+    }
+    header .name {
+        color: white;
+        margin-top: 50px;
+        font-size: 2em;
+        font-weight: 800;
+        font-family: verdana;
+    }
+
+}
+
+@media screen and (max-width:360px)
+{
+    
+    #photo {
+        height: 20vh;
+        position: relative;
+        left: 35vw;
+        top: 10px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 2px lightcyan;
+    }
+    
+
+}
+.desc
+{
+    font-size: 1.3rem;
+    color:#f86706;
+    text-align: justify;
+}
+.achievement1
+{
+ 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.achievement1 li
+{
+    width: 60%;
+    font-size:2rem;
+    margin: 10px;
+    background:linear-gradient(to right , rgb(75, 243, 33),rgba(22, 221, 22, 0.199));
+    border-radius: 30px;
+    padding-left:20px;
+    padding-top:5px; 
+    color: rgba(47, 15, 228, 0.87);
+}
+.achievement1 li:hover
+{
+   
+    background:linear-gradient(to right , rgb(75, 243, 33),rgba(66, 7, 226, 0.986));
+   
+    color: #060111;
+}
+.achievement1 li::before
+{
+content:'';
+background-image: url(images/award.png);
+display: inline-block;
+height: 30px;
+width: 30px;
+background-size: contain;
+
+
+}
+.project:hover
+{
+    transform: scale(1.2);
+
+}
