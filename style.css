@@ -314,11 +314,11 @@ margin: 10px;
 }
 #exp:nth-child(2n)
 {
-    left: 1%;
+    left: 1.15%;
 }
 #exp:nth-child(2n+1)
 {
-    left:54%;
+    left:54.1%;
 }
 #line
 {position: absolute;
@@ -327,7 +327,19 @@ margin: 10px;
     border: 3px dashed darkgoldenrod;
     
     
-    top: 7%;
+    top: 13%;
+    left: 50%;
+}
+    
+/* this is line for car */
+#linec  
+{position: absolute;
+    height: 68%;
+    width: 0px;
+    border: 3px dashed darkgoldenrod;
+    
+    
+    top: 15%;
     left: 50%;
 }
 #line>#plane
@@ -335,15 +347,16 @@ margin: 10px;
    
     position: sticky;
    
-    top: 20px;
+    top: 100px;
     font-size: 2em;
     transform: rotate(90deg);
     color: darkblue;
+    z-index: 3;
     
     
 
 }
-#line>#car
+#linec>#car
 {
    
     position: sticky;
@@ -358,7 +371,7 @@ margin: 10px;
 }
 #exp::after{
     position: absolute;
-    top: 30%;
+    top: 50%;
     
     content: '';
     
@@ -366,6 +379,7 @@ margin: 10px;
     height: 15px;
     background-color: red;
     border-radius: 50%;
+    z-index: 2;
 }
 #exp:nth-child(2n)::after
 {
@@ -396,13 +410,22 @@ margin: 10px;
         font-weight: 800;
         font-family: verdana;
     }
+    .skills
+    {
+        width: 40vw;
+    }
 
 }
 @media screen and (max-width:600px)
 {
-    #line
+    #line,#linec
     {
         left: -4%;
+    }
+    #linec
+    {
+        top:15%;
+        height: 66%;
     }
     #exp
     {
@@ -411,7 +434,7 @@ margin: 10px;
     }
     #exp::after
     {
-        left: -22.5% !important;
+        left: -23.75% !important;
     }
     .project
     {
@@ -447,6 +470,10 @@ margin: 10px;
         font-weight: 800;
         font-family: verdana;
     }
+    .skills
+    {
+        width: 80vw;
+    }
 
 }
 
@@ -460,6 +487,15 @@ margin: 10px;
         top: 10px;
         border-radius: 50%;
         box-shadow: 0px 0px 10px 2px lightcyan;
+    }
+    #exp::after
+    {
+        left: -24.65% !important;
+    }
+    ul.icon li a {
+      
+        font-size: 1em;
+        
     }
     
 
